@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// hihi
+/// This is  where the app view is defined
 struct ContentView: View {
     
     var body: some View {
