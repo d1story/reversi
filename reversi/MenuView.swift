@@ -9,7 +9,9 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ///George set up @binding or @environment for setting turn time
+        ///add navigation bar to link to gameboard view
+        Text("Place holder")
     }
 }
 

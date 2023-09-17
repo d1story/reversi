@@ -11,6 +11,12 @@
 		A247E1482AB6719B002F7972 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E1472AB6719B002F7972 /* ContentView.swift */; };
 		A247E14A2AB671A0002F7972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A247E1492AB671A0002F7972 /* Assets.xcassets */; };
 		A247E14D2AB671A0002F7972 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A247E14C2AB671A0002F7972 /* Preview Assets.xcassets */; };
+		A247E1542AB725A2002F7972 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E1532AB725A1002F7972 /* GameBoard.swift */; };
+		A247E1562AB725B1002F7972 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E1552AB725B1002F7972 /* Player.swift */; };
+		A247E1582AB725C2002F7972 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E1572AB725C2002F7972 /* DotView.swift */; };
+		A247E15C2AB7262D002F7972 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E15B2AB7262D002F7972 /* MenuView.swift */; };
+		A247E15E2AB727C1002F7972 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E15D2AB727C1002F7972 /* GameBoardView.swift */; };
+		A247E1602AB727D1002F7972 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247E15F2AB727D1002F7972 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		A247E1472AB6719B002F7972 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A247E1492AB671A0002F7972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A247E14C2AB671A0002F7972 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A247E1532AB725A1002F7972 /* GameBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		A247E1552AB725B1002F7972 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A247E1572AB725C2002F7972 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		A247E15B2AB7262D002F7972 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A247E15D2AB727C1002F7972 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		A247E15F2AB727D1002F7972 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				A247E1452AB6719B002F7972 /* reversiApp.swift */,
 				A247E1472AB6719B002F7972 /* ContentView.swift */,
+				A247E1532AB725A1002F7972 /* GameBoard.swift */,
+				A247E15D2AB727C1002F7972 /* GameBoardView.swift */,
+				A247E15F2AB727D1002F7972 /* Game.swift */,
+				A247E1552AB725B1002F7972 /* Player.swift */,
+				A247E1572AB725C2002F7972 /* DotView.swift */,
+				A247E15B2AB7262D002F7972 /* MenuView.swift */,
 				A247E1492AB671A0002F7972 /* Assets.xcassets */,
 				A247E14B2AB671A0002F7972 /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A247E15C2AB7262D002F7972 /* MenuView.swift in Sources */,
+				A247E1562AB725B1002F7972 /* Player.swift in Sources */,
 				A247E1482AB6719B002F7972 /* ContentView.swift in Sources */,
+				A247E1542AB725A2002F7972 /* GameBoard.swift in Sources */,
 				A247E1462AB6719B002F7972 /* reversiApp.swift in Sources */,
+				A247E15E2AB727C1002F7972 /* GameBoardView.swift in Sources */,
+				A247E1582AB725C2002F7972 /* DotView.swift in Sources */,
+				A247E1602AB727D1002F7972 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

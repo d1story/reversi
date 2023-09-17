@@ -14,13 +14,8 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ///Sam add navigation bar to call menu
+        Text("This is Place holder")
     }
 }
 
