@@ -7,17 +7,15 @@
 
 import SwiftUI
 
-/// hihi
+/// This is  where the app view is defined
+/// kdajsflaksdjflaskdjflk
+/// lalallaallala
+/// test 2
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ///Sam add navigation bar to call menu
+        Text("This is Place holder")
     }
 }
 
