@@ -14,6 +14,7 @@ struct GameBoard{
     ///     -1 is Black,
     ///     1 is White,
     var currentBoard:[[Int]] = Array(repeating:(Array(repeating:0,count:8)),count:8)
+    
     /// Alysa
     /// This updates the gameboard
     func update(move: Array, color: Int)-> Bool{
