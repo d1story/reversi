@@ -16,7 +16,7 @@ struct GameBoard{
     var currentBoard:[[Int]] = Array(repeating:(Array(repeating:0,count:8)),count:8)
     /// Alysa
     /// This updates the gameboard
-    func update(move: Array, color: Int)->Void{
+    func update(move: Array, color: Int)-> Bool{
         """
         Update currentBoard and return True if the move is a valid move. Otherwise return false.
 
