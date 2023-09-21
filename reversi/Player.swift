@@ -48,12 +48,31 @@ class Player{
     }
     /// Tiffany
     /// This sweeps the board to check the score this player
-    func checkScore(board:GameBoard)->Int{
-        return 0
+    
+    func checkScore(board: GameBoard) -> Int {
+        var playerScore = 0
+        
+        for row in 0..<board.count {
+            for col in 0..<board[row].count {
+                if board[row][col] == color {
+                    playerScore += 1
+                }
+            }
+        }
+        
+        score = playerScore
+        return playerScore
     }
-   
-}
 
+"""
+    Below is what Eric originally wrote:
+
+        func checkScore(board:GameBoard)->Int{
+            return 0
+        }
+       
+    }
+"""
 
 
 
