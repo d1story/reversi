@@ -45,16 +45,71 @@ struct GameBoard{
         self.currentBoard[x][y] = color
     }
 
-    /// Stephany
+    /// Stephanie
     /// This check if a move is valid
+    
+    // Check if outside of board
+    func positionInBounds(n: Int, row: Int, col: Int) -> Bool {
+        // int n here is just 8
+        return row >= 0 && row < n && col >= 0 && col < n
+    }
+
+    // Check if it could move in a certain direction
+    func checkLegalInDirection(board: [[Int]], n: Int, row: Int, col: Int, colour: Int, deltaRow: Int, deltaCol: Int) -> Bool {
+        // 0 means empty, -1 means black, 1 means white
+        if board[row][col] == 0 {
+            let newRow = row + deltaRow
+            let newCol = col + deltaCol
+            
+            if positionInBounds(n: n, row: newRow, col: newCol) && board[newRow][newCol] == -colour {
+                var rowIndex = newRow + deltaRow
+                var colIndex = newCol + deltaCol
+                
+                while positionInBounds(n: n, row: rowIndex, col: colIndex) && board[rowIndex][colIndex] == -colour {
+                    rowIndex += deltaRow
+                    colIndex += deltaCol
+                }
+                
+                if positionInBounds(n: n, row: rowIndex, col: colIndex) && board[rowIndex][colIndex] == colour {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
+    // Check if legal move
+    func checkValid(board: [[Int]], n: Int, row: Int, col: Int, colour: Int) -> Bool {
+        let directions = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
+        
+        for direction in directions {
+            let (deltaRow, deltaCol) = direction
+            if checkLegalInDirection(board: board, n: n, row: row, col: col, colour: colour, deltaRow: deltaRow, deltaCol: deltaCol) {
+                return true
+            }
+        }
+        
+        return false
+    }
+    
+    
+    """
+    Below is what Eric wrote initially for checkValid func
+    In case I need to modify my part for consistency with others
+    
     func checkValid(move: Array)->Bool{
-        """
+        
         Check if a move is a valid move.
 
         move: an array [x, y], x is row number from 0 to 7 and y is column number from 0 to 7.
-        """
+        
         return false
     }
+    
+    """
+    
+    
+    
     /// Serena
     /// This updates the
     func flip(move: Array, color: Int)->Void {
