@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639969402ABCC232002B8A74 /* playeringame2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6399693F2ABCC231002B8A74 /* playeringame2.swift */; };
 		63DCB1C62AB66AE7007BACF8 /* ReversiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1C52AB66AE7007BACF8 /* ReversiApp.swift */; };
 		63DCB1C82AB66AE7007BACF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1C72AB66AE7007BACF8 /* ContentView.swift */; };
 		63DCB1CA2AB66AEA007BACF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DCB1C92AB66AEA007BACF8 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		63DCB1D72AB66AEA007BACF8 /* ReversiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1D62AB66AEA007BACF8 /* ReversiTests.swift */; };
 		63DCB1E12AB66AEA007BACF8 /* ReversiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1E02AB66AEA007BACF8 /* ReversiUITests.swift */; };
 		63DCB1E32AB66AEA007BACF8 /* ReversiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1E22AB66AEA007BACF8 /* ReversiUITestsLaunchTests.swift */; };
+		63DCB1F62AB6BAE1007BACF8 /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1F52AB6BAE1007BACF8 /* background.swift */; };
+		63DCB1F82AB6C29C007BACF8 /* playeringame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB1F72AB6C29C007BACF8 /* playeringame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6399693F2ABCC231002B8A74 /* playeringame2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playeringame2.swift; sourceTree = "<group>"; };
 		63DCB1C22AB66AE7007BACF8 /* Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DCB1C52AB66AE7007BACF8 /* ReversiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiApp.swift; sourceTree = "<group>"; };
 		63DCB1C72AB66AE7007BACF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		63DCB1DC2AB66AEA007BACF8 /* ReversiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReversiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DCB1E02AB66AEA007BACF8 /* ReversiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiUITests.swift; sourceTree = "<group>"; };
 		63DCB1E22AB66AEA007BACF8 /* ReversiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		63DCB1F52AB6BAE1007BACF8 /* background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
+		63DCB1F72AB6C29C007BACF8 /* playeringame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playeringame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 				63DCB1C52AB66AE7007BACF8 /* ReversiApp.swift */,
 				63DCB1C72AB66AE7007BACF8 /* ContentView.swift */,
 				63DCB1C92AB66AEA007BACF8 /* Assets.xcassets */,
+				63DCB1F52AB6BAE1007BACF8 /* background.swift */,
+				63DCB1F72AB6C29C007BACF8 /* playeringame.swift */,
+				6399693F2ABCC231002B8A74 /* playeringame2.swift */,
 				63DCB1CB2AB66AEA007BACF8 /* Preview Content */,
 			);
 			path = Reversi;
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DCB1F62AB6BAE1007BACF8 /* background.swift in Sources */,
+				639969402ABCC232002B8A74 /* playeringame2.swift in Sources */,
 				63DCB1C82AB66AE7007BACF8 /* ContentView.swift in Sources */,
 				63DCB1C62AB66AE7007BACF8 /* ReversiApp.swift in Sources */,
+				63DCB1F82AB6C29C007BACF8 /* playeringame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

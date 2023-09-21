@@ -9,10 +9,14 @@ import SwiftUI
 
 struct playeringame: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Image("Colormount")
+                .clipShape(Circle())
+                .overlay{
+                    Circle().stroke(.white,lineWidth:4)
+                }
+                .shadow(radius:20)
     }
 }
-
 struct playeringame_Previews: PreviewProvider {
     static var previews: some View {
         playeringame()

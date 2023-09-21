@@ -9,7 +9,12 @@ import SwiftUI
 
 struct playeringame2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Image("Colormount2")
+                .clipShape(Circle())
+                .overlay{
+                    Circle().stroke(.white,lineWidth:4)
+                }
+                .shadow(radius:20)
     }
 }
 
