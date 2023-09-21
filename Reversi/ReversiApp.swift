@@ -1,14 +1,14 @@
 //
-//  reversiApp.swift
-//  reversi
+//  ReversiApp.swift
+//  Reversi
 //
-//  Created by eric liu on 2023-09-16.
+//  Created by David on 2023/9/16.
 //
 
 import SwiftUI
 
 @main
-struct reversiApp: App {
+struct ReversiApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
