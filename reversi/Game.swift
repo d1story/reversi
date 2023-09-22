@@ -9,8 +9,9 @@ import Foundation
 
 class Game{
     var board = GameBoard()
-    let p1 = Player(color:-1)
-    let p2 = Player(color:1)
+    var timePerMove:Double = 30
+    let p1 = Player(colour:-1)
+    let p2 = Player(colour:1)
     var activePlayer:Player
     
     init(){

@@ -12,10 +12,16 @@ import SwiftUI
 /// lalallaallala
 /// test 2
 struct ContentView: View {
-    
+    @State var time:Int = 10
+    @State var unlimitedtime = false
+    @State var gamestarted:Bool = false
     var body: some View {
-        ///Sam add navigation bar to call menu
-        Text("This is Place holder")
+        if gamestarted{
+            
+        }
+        else{
+            MenuView(time:$time,unlimitedtime: $unlimitedtime,gamestarted: $gamestarted)
+        }
     }
 }
 
