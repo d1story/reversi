@@ -24,7 +24,19 @@ class Game{
     /// Terrisa
     /// Checks if the one player has won the game
     func checkWin()->Bool{
-        return false
+        var currBoard = board.currentBoard
+        
+        var p1AvaliableMove = p1.givePotientialMove(currBoard).count
+        if p1AvaliableMove!=0 {
+            return false
+        }
+        
+        var p2AvaliableMove = p2.givePotientialMove(currBoard).count
+        if p2AvaliableMove!=0 {
+            return false
+        }
+        
+        return true
     }
     
     /// Eric
