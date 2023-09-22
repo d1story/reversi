@@ -20,7 +20,6 @@ class Game{
     
     init(timePerMove:Double){
         self.activePlayer = p1
-        self.timePerMove = timePerMove
     }
     /// Terrisa
     /// Checks if the one player has won the game
@@ -29,9 +28,11 @@ class Game{
     }
     
     /// Eric
-    /// End a Players turn if they run out of time on their turn
-    func timerPerMove()->Void{
-        
+    /// End a Players turn if they run out of time on their turn and plays a random move
+    /// this function should be called when a player times out
+    func timeOut()->Void{
+        let moves = activePlayer.givePotientialMove(board: board);
+        board.update(move: Int.random(in: 0..<moves.count), color: activePlayer.color)
     }
     
 }
