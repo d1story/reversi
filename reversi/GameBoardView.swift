@@ -9,7 +9,9 @@ import SwiftUI
 
 struct GameBoardView: View {
     ///yuchen + David
-    Text("This is Place holder")
+    var body: some View {
+        Text("This is Place holder")
+    }
 }
 
 #Preview {
