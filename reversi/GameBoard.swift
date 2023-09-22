@@ -112,13 +112,39 @@ struct GameBoard{
     
     /// Serena
     /// This updates the
-    func flip(move: Array, color: Int)->Void {
-        """
-        Flip the currentBoard, given move.
-
-        move: an array [x, y], x is row number from 0 to 7 and y is column number from 0 to 7.
-        color: -1 or 1, represents Black / White
-        """
-        
+    func flip(
+    boardName: inout [[Int]],
+    row: Int,
+    col: Int,
+    n: Int,
+    color: Int,
+    checkLegalInDirection: (inout [[Int]], Int, Int, Int, Int, Int, Int) -> Bool,
+    positionInBounds: (Int, Int, Int) -> Bool
+) {
+    let deltaRow = [-1, -1, -1, 0, 0, 1, 1, 1]
+    let deltaCol = [-1, 0, 1, -1, 1, -1, 0, 1]
+    
+    var oppositeColor = -1
+    
+    if color == 1 {
+        oppositeColor = -1
+    } else {
+        oppositeColor = 1
     }
+    
+    boardName[row][col] = color
+    
+    for i in 0..<8 {
+        var actualRow = row + deltaRow[i]
+        var actualCol = col + deltaCol[i]
+        
+        if checkLegalInDirection(&boardName, n, row, col, color, deltaRow[i], deltaCol[i]) {
+            while boardName[actualRow][actualCol] == oppositeColor && positionInBounds(n, actualRow, actualCol) {
+                boardName[actualRow][actualCol] = color
+                actualRow += deltaRow[i]
+                actualCol += deltaCol[i]
+            }
+        }
+    }
+}
 }
